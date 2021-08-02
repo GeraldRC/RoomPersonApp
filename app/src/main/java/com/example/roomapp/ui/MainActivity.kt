@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         Person(2,"Alonso","Reyes",3),
         Person(3,"Alex","Coria",11),
         Person(4,"Luz","Coria",29)
-
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
