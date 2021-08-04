@@ -52,10 +52,10 @@ dependencies {
     //Rooms KTX
     implementation("androidx.room:room-ktx:2.3.0")
 
-    //Lifecycle KTX
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-alpha02")
+
 
     // Lifecycle components
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
 }

@@ -1,7 +1,5 @@
 package com.example.roomapp
 
--+
-
 import android.app.Application
 import com.example.roomapp.db.PersonDb
 import com.example.roomapp.db.PersonRepo

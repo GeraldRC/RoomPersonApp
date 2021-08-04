@@ -16,7 +16,7 @@ class PersonViewModel(private val repository: PersonRepo): ViewModel() {
 
 }
 
-class WordViewModelFactory(private val repository: PersonRepo) : ViewModelProvider.Factory {
+class PersonViewModelFactory(private val repository: PersonRepo) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(PersonViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")

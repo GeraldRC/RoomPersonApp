@@ -1,6 +1,7 @@
 package com.example.roomapp.db
 
 import android.content.Context
+import android.util.Log
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
@@ -14,7 +15,7 @@ import kotlinx.coroutines.launch
     version = 1,
     exportSchema = false
 )
-abstract class PersonDb: RoomDatabase() {
+abstract class PersonDb : RoomDatabase() {
 
     abstract fun personDao(): PersonDao
 
@@ -32,10 +33,11 @@ abstract class PersonDb: RoomDatabase() {
                     personDao.deleteAll()
 
                     // Add sample words.
-                    var person = Person(0,"Gerald","Reyes",29)
+                    var person = Person(name = "Gerald", lastName = "Reyes", age = 29)
                     personDao.insert(person)
+                    Log.i("DB", "Paso por la db")
 
-                    person = Person(0,"Alonso","Reyes",3)
+                    person = Person(name = "Alonso",lastName =  "Reyes",age =  3)
                     personDao.insert(person)
                 }
             }
