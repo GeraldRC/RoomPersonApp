@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 
 @Database(
     entities = [Person::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class PersonDb : RoomDatabase() {
@@ -37,7 +37,7 @@ abstract class PersonDb : RoomDatabase() {
                     personDao.insert(person)
                     Log.i("DB", "Paso por la db")
 
-                    person = Person(name = "Alonso",lastName =  "Reyes",age =  3)
+                    person = Person(name = "Alonso", lastName =  "Reyes", age =  3)
                     personDao.insert(person)
                 }
             }
